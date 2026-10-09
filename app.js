@@ -325,6 +325,7 @@ function openCatalog(category) {
 
 function renderCatalogProducts() {
   const collection = products[activeCategory];
+  grid.dataset.category = activeCategory;
   const query = normalizeLocation(productSearch.value);
   const selectedStyle = styleFilter.value;
   const sort = productSort.value;
@@ -357,7 +358,7 @@ function renderCatalogProducts() {
   grid.innerHTML = matchingProducts.map(product => `
     <article class="product-card" tabindex="0" role="button" data-product="${product.id}" aria-label="Ver ${product.name}, ${peso.format(product.price)}">
       <div class="product-image-wrap product-image-wrap-gallery">
-        <div class="product-image-gallery" aria-label="Todas las fotos de ${product.style}">
+        <div class="product-image-gallery" style="--gallery-count: ${product.images?.length || 1}" aria-label="Todas las fotos de ${product.style}">
           ${product.images?.length
             ? product.images.map((image, index) => `<img class="product-image" src="${image}" alt="${product.style}, foto ${index + 1}">`).join("")
             : `<img class="product-image" src="${productImage(product)}" alt="${product.name}">`}

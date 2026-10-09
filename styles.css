@@ -160,8 +160,9 @@ h1 em { color: var(--accent); font-family: var(--serif); font-weight: 400; }
 .product-card:hover .product-image { transform: scale(1.035); }
 .product-image-wrap { position: relative; overflow: hidden; background: #e9e7df; }
 .product-image-wrap-gallery { overflow: visible; background: transparent; }
-.product-image-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(58px, 1fr)); gap: 6px; }
-.product-image-gallery .product-image { aspect-ratio: 3 / 4; border-radius: 6px; }
+.product-grid[data-category="ropa"] { grid-template-columns: minmax(0, 1fr); }
+.product-image-gallery { display: grid; grid-template-columns: repeat(var(--gallery-count), minmax(76px, 1fr)); gap: 8px; overflow-x: auto; padding-bottom: 5px; }
+.product-image-gallery .product-image { width: 100%; min-width: 76px; aspect-ratio: 3 / 4; border-radius: 6px; }
 .product-card:hover .product-image-gallery .product-image { transform: none; }
 .product-tag { position: absolute; top: 10px; left: 10px; background: var(--white); padding: 6px 8px; font-size: 8px; letter-spacing: .7px; }
 .product-info { padding: 12px 2px; display: flex; justify-content: space-between; gap: 8px; align-items: start; }
