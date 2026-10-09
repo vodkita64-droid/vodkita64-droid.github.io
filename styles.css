@@ -525,11 +525,31 @@ a.button { text-decoration: none; }
 .mini-perks { color: #c8c4d1; font-size: 11px; }
 .mini-perks span { color: var(--electric); }
 .share-area {
+  width: min(460px, 100%);
+  margin-top: 20px;
+  padding: 14px;
   border-color: #403b4a;
   border-radius: 10px;
   background: #211e29;
 }
-.share-area label { color: var(--electric); }
+.share-area label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--electric);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+.public-store-link {
+  display: inline-block;
+  margin: 0 0 10px;
+  color: var(--electric);
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.public-store-link:hover { color: #e0ff86; }
 .share-controls input {
   border-color: #403b4a;
   border-radius: 6px;

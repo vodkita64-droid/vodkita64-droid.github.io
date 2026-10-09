@@ -537,10 +537,8 @@ document.addEventListener("keydown", event => {
   }
 });
 
-const shareUrl = new URL(window.location.href);
-shareUrl.search = "";
-shareUrl.hash = "";
-document.querySelector("#share-link").value = shareUrl.href;
+const shareUrl = "https://vodkita64-droid.github.io/";
+document.querySelector("#share-link").value = shareUrl;
 updateCartCount();
 createShowcase();
 const requestedCategory = new URLSearchParams(window.location.search).get("categoria");
