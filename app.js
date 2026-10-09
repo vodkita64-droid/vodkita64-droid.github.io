@@ -26,14 +26,13 @@ const products = {
     { id: "m12", name: "Forest Muse", style: "Gorra deportiva", price: 459, stock: 7, sizes: ["Unitalla"], color: "#536b59", accent: "#d9c69d", description: "Verde bosque, ajuste cómodo y una vibra outdoor que queda igual de bien en la ciudad.", badge: "FAVORITA" }
   ],
   ropa: [
-    { id: "r1", name: "Heavyweight Tee", style: "Playera oversize", kind: "tee", price: 549, stock: 12, sizes: ["S", "M", "L", "XL"], color: "#e5ded2", accent: "#3c4039", description: "Playera de algodón pesado con caída amplia y gráfico minimal al frente. La pieza fácil para armar cualquier fit.", badge: "MÁS VENDIDA" },
-    { id: "r2", name: "Club Hoodie", style: "Sudadera con capucha", kind: "hoodie", price: 1099, stock: 8, sizes: ["S", "M", "L", "XL"], color: "#a5aa98", accent: "#33392f", description: "Sudadera de corte relajado, interior suave y bolsillo frontal. Abrigo cómodo con un detalle bordado discreto.", badge: "ESENCIAL" },
-    { id: "r3", name: "Daily Box Tee", style: "Playera boxy", kind: "tee", price: 599, stock: 10, sizes: ["S", "M", "L", "XL"], color: "#c7a28a", accent: "#f5ebdd", description: "Corte boxy, hombro caído y tono arena. Un básico con proporciones modernas para usar en capas.", badge: "NUEVA" },
-    { id: "r4", name: "Track Jacket", style: "Chamarra ligera", kind: "jacket", price: 1299, stock: 6, sizes: ["S", "M", "L", "XL"], color: "#455d57", accent: "#e1c078", description: "Chamarra ligera de inspiración deportiva con cierre frontal y acentos en contraste para un look retro.", badge: "EDICIÓN ESPECIAL" },
-    { id: "r5", name: "Utility Cargo", style: "Pantalón cargo", kind: "pants", price: 1199, stock: 7, sizes: ["28", "30", "32", "34"], color: "#85846a", accent: "#d9d2bd", description: "Pantalón cargo de corte recto, bolsillos funcionales y tono olivo combinable para diario.", badge: "URBAN" },
-    { id: "r6", name: "Sunday Crew", style: "Sudadera crewneck", kind: "hoodie", price: 999, stock: 9, sizes: ["S", "M", "L", "XL"], color: "#d5c8b5", accent: "#a7543e", description: "Sudadera de cuello redondo en tono hueso con gráfico pequeño. Cómoda, limpia y fácil de combinar.", badge: "FAVORITA" },
-    { id: "r7", name: "Night Shift Tee", style: "Playera gráfica", kind: "tee", price: 649, stock: 8, sizes: ["S", "M", "L", "XL"], color: "#34383b", accent: "#d47c56", description: "Algodón suave, corte relajado y gráfico posterior inspirado en la ciudad después del atardecer.", badge: "NUEVA" },
-    { id: "r8", name: "Studio Overshirt", style: "Sobrecamisa", kind: "jacket", price: 1399, stock: 5, sizes: ["S", "M", "L", "XL"], color: "#9b735b", accent: "#ead9bf", description: "Sobrecamisa estructurada para usar abierta o cerrada. Una capa versátil con textura y bolsillos frontales.", badge: "ÚLTIMAS PIEZAS" }
+    { id: "r1", name: "Heavyweight Tee", style: "Playera oversize", kind: "tee", images: ["o1", "o2", "o3", "o4", "o5", "o6", "o7", "o8"].map(image => `assets/ropa/oversize-${image}.jpeg`), price: 549, stock: 12, sizes: ["S", "M", "L", "XL"], color: "#e5ded2", accent: "#3c4039", description: "Playera oversize de caída amplia y hombro relajado. Su silueta cómoda funciona sola o en capas para un look urbano diario.", badge: "MÁS VENDIDA" },
+    { id: "r2", name: "Club Hoodie", style: "Sudadera con capucha", kind: "hoodie", images: ["g1", "g2", "g3", "g4", "g5", "g6"].map(image => `assets/ropa/hoodie-${image}.jpeg`), price: 1099, stock: 8, sizes: ["S", "M", "L", "XL"], color: "#a5aa98", accent: "#33392f", description: "Sudadera con capucha de corte relajado, cierre frontal y bolsillos prácticos. Una capa cálida para completar tus outfits casuales.", badge: "ESENCIAL" },
+    { id: "r3", name: "Daily Box Tee", style: "Playera boxy", kind: "tee", images: ["b1", "b2", "b3", "b4", "b5", "b6", "b7", "b8"].map(image => `assets/ropa/boxy-${image}.jpeg`), price: 599, stock: 10, sizes: ["S", "M", "L", "XL"], color: "#c7a28a", accent: "#f5ebdd", description: "Playera boxy de cuerpo amplio, hombros caídos y tela de apariencia pesada. Un básico con estructura para llevar con pantalón recto o cargo.", badge: "NUEVA" },
+    { id: "r4", name: "Light Puffer", style: "Chamarra ligera", kind: "jacket", images: ["jacket-2.jpeg", "jacket-3.jpeg", "jacket-whatsapp.jpeg"].map(image => `assets/ropa/${image}`), price: 1299, stock: 6, sizes: ["S", "M", "L", "XL"], color: "#455d57", accent: "#e1c078", description: "Chamarra ligera acolchada con cierre frontal y bolsillos. Una capa cómoda para los días frescos sin perder movilidad.", badge: "EDICIÓN ESPECIAL" },
+    { id: "r5", name: "Utility Cargo", style: "Pantalón cargo", kind: "pants", images: ["p1", "p2", "p3", "p4"].map(image => `assets/ropa/cargo-${image}.jpeg`), price: 1199, stock: 7, sizes: ["28", "30", "32", "34"], color: "#85846a", accent: "#d9d2bd", description: "Pantalón cargo de corte relajado con bolsillos amplios y funcionales. Combina con playeras oversize y tenis para un outfit urbano.", badge: "URBAN" },
+    { id: "r6", name: "Sunday Crew", style: "Sudadera crewneck", kind: "hoodie", images: ["ca1", "ca2", "ca3", "ca4", "ca5", "ca6"].map(image => `assets/ropa/crew-${image}.jpeg`), price: 999, stock: 9, sizes: ["S", "M", "L", "XL"], color: "#d5c8b5", accent: "#a7543e", description: "Sudadera crewneck de cuello redondo y silueta cómoda. Una prenda versátil para usar en casa o sumar una capa a tu look diario.", badge: "FAVORITA" },
+    { id: "r8", name: "Studio Overshirt", style: "Sobrecamisa", kind: "jacket", images: ["s1", "s2", "s3", "s4", "s5"].map(image => `assets/ropa/overshirt-${image}.jpeg`), price: 1399, stock: 5, sizes: ["S", "M", "L", "XL"], color: "#9b735b", accent: "#ead9bf", description: "Sobrecamisa de silueta relajada con botones y bolsillos frontales. Úsala abierta sobre una playera o cerrada como camisa ligera.", badge: "ÚLTIMAS PIEZAS" }
   ],
   tenis: [
     { id: "t1", name: "Court Low 01", style: "Tenis de diario", kind: "sneaker", price: 1499, stock: 7, sizes: ["25", "26", "27", "28", "29"], color: "#e7dfd1", accent: "#536356", description: "Silueta baja de inspiración clásica, base clara y acentos verde bosque. Un par limpio para combinar diario.", badge: "MÁS VENDIDOS" },
@@ -250,6 +249,7 @@ function showCheckoutResult(method) {
 }
 
 function productImage(product, label = product.name) {
+  if (product.images?.length) return product.images[0];
   const safeLabel = label.replace(/[&<>"']/g, "");
   let illustration;
   if (product.kind === "sneaker") {
@@ -357,7 +357,7 @@ function renderCatalogProducts() {
   grid.innerHTML = matchingProducts.map(product => `
     <article class="product-card" tabindex="0" role="button" data-product="${product.id}" aria-label="Ver ${product.name}, ${peso.format(product.price)}">
       <div class="product-image-wrap">
-        <img class="product-image" src="${productImage(product)}" alt="Ilustración de ${product.name}">
+        <img class="product-image" src="${productImage(product)}" alt="${product.name}">
         <span class="product-tag">${product.badge}</span>
       </div>
       <div class="product-info">
@@ -375,10 +375,19 @@ function openDetail(product) {
   selectedProduct = product;
   const available = product.stock - getProductCartQuantity(product.id);
   const detail = document.querySelector("#product-detail");
+  const gallery = product.images?.length > 1
+    ? `<div class="detail-gallery" aria-label="Más imágenes de ${product.name}">${product.images.map((image, index) => `
+      <button class="detail-thumbnail" type="button" data-gallery-image="${image}" aria-label="Ver imagen ${index + 1} de ${product.name}" aria-pressed="${index === 0}">
+        <img src="${image}" alt="">
+      </button>`).join("")}</div>`
+    : "";
   detail.innerHTML = `
     <button class="text-button detail-back" type="button" data-view="catalog">← Volver a la colección</button>
     <div class="detail-layout">
-      <img class="detail-image" src="${productImage(product)}" alt="Ilustración de ${product.name}">
+      <div class="detail-media">
+        <img class="detail-image" id="detail-main-image" src="${productImage(product)}" alt="${product.name}">
+        ${gallery}
+      </div>
       <div class="detail-copy">
         <p class="eyebrow">${product.badge} · ${product.style}</p>
         <h1>${product.name}</h1>
@@ -405,8 +414,15 @@ function createShowcase() {
 }
 
 document.addEventListener("click", event => {
-  const target = event.target.closest("[data-view], [data-category], [data-product], [data-cart-action], [data-catalog-reset], .add-cart, .checkout-start, #copy-link");
+  const target = event.target.closest("[data-view], [data-category], [data-product], [data-cart-action], [data-catalog-reset], [data-gallery-image], .add-cart, .checkout-start, #copy-link");
   if (!target) return;
+  if (target.matches("[data-gallery-image]")) {
+    document.querySelector("#detail-main-image").src = target.dataset.galleryImage;
+    document.querySelectorAll(".detail-thumbnail").forEach(thumbnail => {
+      thumbnail.setAttribute("aria-pressed", String(thumbnail === target));
+    });
+    return;
+  }
   if (target.matches("[data-catalog-reset]")) {
     productSearch.value = "";
     styleFilter.value = "all";
