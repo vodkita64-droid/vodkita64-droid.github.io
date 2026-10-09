@@ -1,30 +1,4 @@
 const products = {
-  gorras: [
-    { id: "h1", name: "Classic Washed", style: "Dad hat", price: 429, stock: 8, sizes: ["Unitalla"], color: "#46574c", accent: "#d5bc90", description: "Gorra de algodón con acabado lavado, visera curva y ajuste trasero. Un básico relajado que combina con todo.", badge: "MÁS VENDIDA" },
-    { id: "h2", name: "Street Five Panel", style: "Five panel", price: 499, stock: 6, sizes: ["Unitalla"], color: "#d18a55", accent: "#f0d6b1", description: "Silueta de cinco paneles en tono cálido, ligera y lista para darle un toque urbano al outfit.", badge: "NUEVA" },
-    { id: "h3", name: "Night Runner", style: "Gorra deportiva", price: 389, stock: 11, sizes: ["Unitalla"], color: "#30363a", accent: "#c95d40", description: "Diseño deportivo en color oscuro con detalles contrastantes y cierre ajustable para un fit cómodo.", badge: "FAVORITA" },
-    { id: "h4", name: "Desert Cord", style: "Pana", price: 549, stock: 4, sizes: ["Unitalla"], color: "#b47753", accent: "#ead0ad", description: "Textura de pana suave y silueta clásica. Una opción diferente para días frescos y looks casuales.", badge: "EDICIÓN ESPECIAL" },
-    { id: "h5", name: "Weekend Club", style: "Dad hat", price: 459, stock: 9, sizes: ["Unitalla"], color: "#d6d2c4", accent: "#68796b", description: "Una gorra clara, sencilla y combinable. Su broche regulable ayuda a encontrar el ajuste ideal.", badge: "ESENCIAL" },
-    { id: "h6", name: "Court Classic", style: "Snapback", price: 519, stock: 5, sizes: ["S/M", "L/XL"], color: "#334860", accent: "#e2b865", description: "Visera plana y estructura firme con inspiración en el estilo de cancha. Ajuste cómodo para todos los días.", badge: "URBAN" },
-    { id: "h7", name: "Olive Everyday", style: "Gorra clásica", price: 399, stock: 10, sizes: ["Unitalla"], color: "#727d4b", accent: "#d6c9a4", description: "Verde olivo, perfil bajo y tela ligera. El complemento fácil para tu rotación diaria.", badge: "MÁS VENDIDA" },
-    { id: "h8", name: "Blue Horizon", style: "Gorra deportiva", price: 449, stock: 7, sizes: ["Unitalla"], color: "#507c91", accent: "#e3c999", description: "Azul fresco con paneles transpirables y visera curva. Ideal para salidas y planes al aire libre.", badge: "NUEVA" },
-    { id: "h9", name: "Blackout Mono", style: "Snapback", price: 529, stock: 3, sizes: ["S/M", "L/XL"], color: "#282b2b", accent: "#a7a99e", description: "Una snapback negra de líneas limpias, con detalle tonal para un look discreto y moderno.", badge: "ÚLTIMAS PIEZAS" },
-    { id: "h10", name: "Racing Stripe", style: "Five panel", price: 479, stock: 8, sizes: ["Unitalla"], color: "#a64f3c", accent: "#f1d7a8", description: "Tono terracota con un detalle gráfico inspirado en el streetwear actual. Ligera y ajustable.", badge: "URBAN" },
-    { id: "h11", name: "Coastline Blue", style: "Gorra clásica", price: 439, stock: 7, sizes: ["Unitalla"], color: "#527d8b", accent: "#e8c998", description: "Azul profundo con una silueta clásica y cómoda. Un básico fresco para escapadas y días de sol.", badge: "NUEVA" },
-    { id: "h12", name: "Studio Cord", style: "Pana", price: 559, stock: 4, sizes: ["Unitalla"], color: "#6b594c", accent: "#d9b88c", description: "Pana café, textura suave y un perfil relajado que suma carácter a cualquier outfit.", badge: "EDICIÓN ESPECIAL" },
-    { id: "m1", name: "Soft Bloom", style: "Dad hat", price: 429, stock: 8, sizes: ["Unitalla"], color: "#bd7775", accent: "#f2d8c9", description: "Gorra de perfil relajado en rosa suave, con acabado cómodo y broche ajustable. Fácil de llevar todos los días.", badge: "MÁS VENDIDA" },
-    { id: "m2", name: "Lavender Day", style: "Gorra clásica", price: 459, stock: 6, sizes: ["Unitalla"], color: "#9789ad", accent: "#e9d6cf", description: "Lavanda y detalles delicados para sumar color sin complicar tu look. Fit suave y regulable.", badge: "NUEVA" },
-    { id: "m3", name: "City Girl", style: "Five panel", price: 499, stock: 7, sizes: ["Unitalla"], color: "#c67f54", accent: "#f1d5af", description: "Inspiración urbana, forma ligera y color quemado para acompañar tus outfits favoritos.", badge: "URBAN" },
-    { id: "m4", name: "Sage Weekend", style: "Dad hat", price: 439, stock: 9, sizes: ["Unitalla"], color: "#91a28a", accent: "#e6d9c2", description: "Verde salvia con vibra relajada. Una silueta clásica para días tranquilos y planes espontáneos.", badge: "ESENCIAL" },
-    { id: "m5", name: "Cherry Pop", style: "Gorra clásica", price: 399, stock: 10, sizes: ["Unitalla"], color: "#ad4449", accent: "#f0d7c2", description: "Un toque cereza para levantar cualquier combinación. Ligera, cómoda y con ajuste posterior.", badge: "FAVORITA" },
-    { id: "m6", name: "Cloud Nine", style: "Gorra deportiva", price: 469, stock: 5, sizes: ["Unitalla"], color: "#e1dcd0", accent: "#b97569", description: "Tono neutro y diseño deportivo ligero. Una compañera práctica para salir, caminar o viajar.", badge: "NUEVA" },
-    { id: "m7", name: "Denim Muse", style: "Dad hat", price: 519, stock: 4, sizes: ["Unitalla"], color: "#526c87", accent: "#e4c798", description: "Azul inspirado en el denim, con una silueta versátil que va bien con mezclilla y básicos.", badge: "EDICIÓN ESPECIAL" },
-    { id: "m8", name: "Lilac Court", style: "Snapback", price: 529, stock: 3, sizes: ["S/M", "L/XL"], color: "#a18ba4", accent: "#e8d1b9", description: "Visera plana y un tono lila con mucha personalidad. Ajuste cómodo con estructura firme.", badge: "ÚLTIMAS PIEZAS" },
-    { id: "m9", name: "Miel & Sol", style: "Pana", price: 549, stock: 6, sizes: ["Unitalla"], color: "#bd9454", accent: "#f2dfb5", description: "Textura acanalada y tono miel para un look cálido. Su forma clásica nunca pasa de moda.", badge: "ESENCIAL" },
-    { id: "m10", name: "Noir Studio", style: "Gorra clásica", price: 449, stock: 8, sizes: ["Unitalla"], color: "#36343a", accent: "#d4a6a0", description: "Negra y minimalista con un detalle sutil. Para cuando quieres que la gorra combine con todo.", badge: "MÁS VENDIDA" },
-    { id: "m11", name: "Peach Club", style: "Five panel", price: 489, stock: 6, sizes: ["Unitalla"], color: "#d78d72", accent: "#f3d7b2", description: "Tono durazno y forma ligera para un acento alegre, fácil de combinar y llevar a todas partes.", badge: "NUEVA" },
-    { id: "m12", name: "Forest Muse", style: "Gorra deportiva", price: 459, stock: 7, sizes: ["Unitalla"], color: "#536b59", accent: "#d9c69d", description: "Verde bosque, ajuste cómodo y una vibra outdoor que queda igual de bien en la ciudad.", badge: "FAVORITA" }
-  ],
   ropa: [
     { id: "r1", name: "Heavyweight Tee", style: "Playera oversize", kind: "tee", images: ["o1", "o2", "o3", "o4", "o5", "o6", "o7", "o8"].map(image => `assets/ropa/oversize-${image}.jpeg`), price: 549, stock: 12, sizes: ["S", "M", "L", "XL"], color: "#e5ded2", accent: "#3c4039", description: "Playera oversize de caída amplia y hombro relajado. Su silueta cómoda funciona sola o en capas para un look urbano diario.", badge: "MÁS VENDIDA" },
     { id: "r2", name: "Club Hoodie", style: "Sudadera con capucha", kind: "hoodie", images: ["g1", "g2", "g3", "g4", "g5", "g6"].map(image => `assets/ropa/hoodie-${image}.jpeg`), price: 1099, stock: 8, sizes: ["S", "M", "L", "XL"], color: "#a5aa98", accent: "#33392f", description: "Sudadera con capucha de corte relajado, cierre frontal y bolsillos prácticos. Una capa cálida para completar tus outfits casuales.", badge: "ESENCIAL" },
@@ -35,14 +9,10 @@ const products = {
     { id: "r8", name: "Studio Overshirt", style: "Sobrecamisa", kind: "jacket", images: ["s1", "s2", "s3", "s4", "s5"].map(image => `assets/ropa/overshirt-${image}.jpeg`), price: 1399, stock: 5, sizes: ["S", "M", "L", "XL"], color: "#9b735b", accent: "#ead9bf", description: "Sobrecamisa de silueta relajada con botones y bolsillos frontales. Úsala abierta sobre una playera o cerrada como camisa ligera.", badge: "ÚLTIMAS PIEZAS" }
   ],
   tenis: [
-    { id: "t1", name: "Court Low 01", style: "Adidas", kind: "sneaker", price: 1499, stock: 7, sizes: ["25", "26", "27", "28", "29"], color: "#e7dfd1", accent: "#536356", description: "Silueta baja de inspiración clásica, base clara y acentos verde bosque. Un par limpio para combinar diario.", badge: "MÁS VENDIDOS" },
-    { id: "t2", name: "Metro Runner", style: "Adidas", kind: "sneaker", price: 1799, stock: 6, sizes: ["25", "26", "27", "28", "29"], color: "#8798a1", accent: "#d9a474", description: "Runner retro con capas de color, textura deportiva y suela cómoda para moverte todo el día.", badge: "NUEVOS" },
-    { id: "t3", name: "Canvas One", style: "Nike", kind: "sneaker", price: 1099, stock: 10, sizes: ["24", "25", "26", "27", "28"], color: "#d0bca0", accent: "#3d4541", description: "Un clásico de lona en tono natural con suela vulcanizada. Ligero, versátil y sin complicaciones.", badge: "ESENCIAL" },
-    { id: "t4", name: "Night Pace", style: "Nike", kind: "sneaker", price: 1899, stock: 5, sizes: ["25", "26", "27", "28", "29"], color: "#34383c", accent: "#d67654", description: "Perfil dinámico, malla transpirable y detalles naranjas para un par deportivo con presencia.", badge: "URBAN" },
-    { id: "t5", name: "Suede Court", style: "Jordan", kind: "sneaker", price: 1699, stock: 4, sizes: ["25", "26", "27", "28", "29"], color: "#ad755d", accent: "#ead8bd", description: "Gamuza en tono terracota, silueta baja y contraste crema. Una combinación con vibra vintage.", badge: "EDICIÓN ESPECIAL" },
-    { id: "t6", name: "Cloud Step", style: "Puma", kind: "sneaker", price: 1999, stock: 8, sizes: ["25", "26", "27", "28", "29"], color: "#d8d9d2", accent: "#748b83", description: "Diseño ligero de líneas suaves y tonos neutros, hecho para completar tus recorridos cotidianos.", badge: "NUEVOS" },
-    { id: "t7", name: "Boardwalk High", style: "Jordan", kind: "sneaker", price: 1599, stock: 6, sizes: ["25", "26", "27", "28", "29"], color: "#52707c", accent: "#e1c68f", description: "Corte alto en azul profundo con acentos cálidos, inspirado en el skate y la costa.", badge: "FAVORITOS" },
-    { id: "t8", name: "Mono Leather", style: "Puma", kind: "sneaker", price: 2199, stock: 3, sizes: ["25", "26", "27", "28", "29"], color: "#eee9df", accent: "#393a37", description: "Silueta minimalista en tonos monocromáticos y acabado limpio para elevar tus básicos.", badge: "ÚLTIMOS PARES" }
+    { id: "t1", name: "Adidas Street", style: "Adidas", kind: "sneaker", images: ["ad1", "ad2", "ad3", "ad4"].map(image => `assets/tenis/adidas-${image}.jpeg`), price: 1499, stock: 7, sizes: ["25", "26", "27", "28", "29"], color: "#e7dfd1", accent: "#536356", description: "Tenis Adidas de silueta urbana, con varias vistas para apreciar sus detalles. Un par versátil para completar tus looks diarios.", badge: "ADIDAS" },
+    { id: "t3", name: "Nike Court", style: "Nike", kind: "sneaker", images: ["nk1", "nk2", "nk3"].map(image => `assets/tenis/nike-${image}.jpeg`), price: 1099, stock: 10, sizes: ["24", "25", "26", "27", "28"], color: "#d0bca0", accent: "#3d4541", description: "Tenis Nike de estilo deportivo y cómodo, con una galería de sus diferentes ángulos y detalles.", badge: "NIKE" },
+    { id: "t5", name: "Jordan Retro", style: "Jordan", kind: "sneaker", images: ["jo1", "jo2", "jo3", "jo4", "jo5"].map(image => `assets/tenis/jordan-${image}.jpeg`), price: 1699, stock: 4, sizes: ["25", "26", "27", "28", "29"], color: "#ad755d", accent: "#ead8bd", description: "Tenis Jordan de inspiración retro. Explora todas sus fotos y encuentra los detalles de esta silueta con carácter.", badge: "JORDAN" },
+    { id: "t6", name: "Puma Runner", style: "Puma", kind: "sneaker", images: ["pu1", "pu2", "pu3"].map(image => `assets/tenis/puma-${image}.jpeg`), price: 1999, stock: 8, sizes: ["25", "26", "27", "28", "29"], color: "#d8d9d2", accent: "#748b83", description: "Tenis Puma de líneas dinámicas y diseño ligero. La galería muestra sus vistas para que los aprecies mejor.", badge: "PUMA" }
   ]
 };
 
@@ -62,7 +32,7 @@ const toast = document.querySelector("#toast");
 const deliveryForm = document.querySelector("#delivery-form");
 const paymentForm = document.querySelector("#payment-form");
 let selectedProduct = null;
-let activeCategory = "gorras";
+let activeCategory = "ropa";
 let checkoutAddress = null;
 const cartStorageKey = "visera-club-cart";
 let toastTimer;
@@ -310,7 +280,7 @@ function showView(id) {
 function openCatalog(category) {
   activeCategory = category;
   const collection = products[category];
-  const categoryName = { gorras: "Gorras", ropa: "Ropa", tenis: "Tenis" }[category];
+  const categoryName = { ropa: "Ropa", tenis: "Tenis" }[category];
   document.querySelector("#catalog-title").textContent = categoryName;
   document.querySelector("#catalog-description").textContent = `${collection.length} piezas para completar tu estilo. Precios en pesos mexicanos.`;
   styleFilter.innerHTML = `<option value="all">Todos los estilos</option>${[...new Set(collection.map(product => product.style))]
@@ -341,9 +311,7 @@ function renderCatalogProducts() {
 
   const itemWord = activeCategory === "tenis"
     ? matchingProducts.length === 1 ? "par" : "pares"
-    : activeCategory === "gorras"
-      ? matchingProducts.length === 1 ? "gorra" : "gorras"
-      : matchingProducts.length === 1 ? "prenda" : "prendas";
+    : matchingProducts.length === 1 ? "prenda" : "prendas";
   productCount.textContent = `${matchingProducts.length} ${itemWord} ${matchingProducts.length === 1 ? "disponible" : "disponibles"}`;
   if (matchingProducts.length === 0) {
     grid.innerHTML = `
@@ -411,9 +379,10 @@ function openDetail(product) {
 }
 
 function createShowcase() {
-  const clothingImages = products.ropa.flatMap(product => product.images ?? [productImage(product)]);
+  const imagesToShow = [...products.ropa, ...products.tenis]
+    .flatMap(product => product.images ?? [productImage(product)]);
   const columns = Array.from({ length: 4 }, (_, column) =>
-    clothingImages.filter((_, index) => index % 4 === column));
+    imagesToShow.filter((_, index) => index % 4 === column));
   showcase.innerHTML = Array.from({ length: 4 }, (_, column) => {
     const images = columns[column].map(image => `<img src="${image}" alt="">`).join("");
     return `<div class="showcase-column"><div class="showcase-sequence">${images}</div><div class="showcase-sequence" aria-hidden="true">${images}</div></div>`;
