@@ -160,7 +160,8 @@ h1 em { color: var(--accent); font-family: var(--serif); font-weight: 400; }
 .product-card:hover .product-image { transform: scale(1.035); }
 .product-image-wrap { position: relative; overflow: hidden; background: #e9e7df; }
 .product-image-wrap-gallery { overflow: visible; background: transparent; }
-.product-grid[data-category="ropa"] { grid-template-columns: minmax(0, 1fr); }
+.product-grid[data-category="ropa"],
+.product-grid[data-category="tenis"] { grid-template-columns: minmax(0, 1fr); }
 .product-image-gallery { display: grid; grid-template-columns: repeat(var(--gallery-count), minmax(76px, 1fr)); gap: 8px; overflow-x: auto; padding-bottom: 5px; }
 .product-image-gallery .product-image { width: 100%; min-width: 76px; aspect-ratio: 3 / 4; border-radius: 6px; }
 .product-card:hover .product-image-gallery .product-image { transform: none; }
