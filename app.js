@@ -538,7 +538,7 @@ document.addEventListener("keydown", event => {
 });
 
 const shareUrl = new URL(window.location.href);
-shareUrl.searchParams.delete("categoria");
+shareUrl.search = "";
 shareUrl.hash = "";
 document.querySelector("#share-link").value = shareUrl.href;
 updateCartCount();
