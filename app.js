@@ -356,8 +356,12 @@ function renderCatalogProducts() {
   }
   grid.innerHTML = matchingProducts.map(product => `
     <article class="product-card" tabindex="0" role="button" data-product="${product.id}" aria-label="Ver ${product.name}, ${peso.format(product.price)}">
-      <div class="product-image-wrap">
-        <img class="product-image" src="${productImage(product)}" alt="${product.name}">
+      <div class="product-image-wrap product-image-wrap-gallery">
+        <div class="product-image-gallery" aria-label="Todas las fotos de ${product.style}">
+          ${product.images?.length
+            ? product.images.map((image, index) => `<img class="product-image" src="${image}" alt="${product.style}, foto ${index + 1}">`).join("")
+            : `<img class="product-image" src="${productImage(product)}" alt="${product.name}">`}
+        </div>
         <span class="product-tag">${product.badge}</span>
       </div>
       <div class="product-info">
@@ -406,10 +410,12 @@ function openDetail(product) {
 }
 
 function createShowcase() {
-  const all = [...products.gorras.slice(0, 4), ...products.ropa.slice(0, 4), ...products.tenis.slice(0, 4)];
+  const clothingImages = products.ropa.flatMap(product => product.images ?? [productImage(product)]);
+  const columns = Array.from({ length: 4 }, (_, column) =>
+    clothingImages.filter((_, index) => index % 4 === column));
   showcase.innerHTML = Array.from({ length: 4 }, (_, column) => {
-    const images = [all[column], all[column + 4], all[column + 8]];
-    return `<div class="showcase-column">${images.map(item => `<img src="${productImage(item)}" alt="">`).join("")}</div>`;
+    const images = columns[column].map(image => `<img src="${image}" alt="">`).join("");
+    return `<div class="showcase-column"><div class="showcase-sequence">${images}</div><div class="showcase-sequence" aria-hidden="true">${images}</div></div>`;
   }).join("");
 }
 
